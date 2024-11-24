@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.teste_costas{
+    /*background-color: #4dbdd6;*/
+    background: linear-gradient(#bdc8ff, #95a8ff);
+    margin-bottom: 120px;
+}
+
+
+.body_values{
+    height: 540px;
+}
+
+.texto_values {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Ajuste conforme necessário */
+
+    margin-top: 360px; /* Ajuste o valor para se aproximar do values_box */
+
+}
+
+.texto_values h3{
+    font-size: 33px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 110px;
+    
+}
+
+
+.values_container{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 135px auto;
+    
+}
+
+.values_box{
+    top: 25%;
+}
+
+.values_container .values_box{
+    position: relative;
+    width: calc(400px - 30px); /*Não entendi ao certo esse calc()*/
+    height: calc(300px - 30px);
+    background: #000;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.values_container .values_box .values_icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.values_container .values_box:hover .values_icon{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.values_container .values_box .values_icon .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.values_container .values_box:hover .values_icon .fa{
+    font-size: 40px;
+}
+
+.values_container .values_box .values_content{
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s; /*Pensar em mudar aqui depois*/
+    opacity: 0;
+}
+
+.values_container .values_box:hover .values_content{
+    top: 100px;
+    opacity: 1;
+}
+
+.values_container .values_box .values_content h3{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.values_container .values_box .values_content p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.values_container .values_box:nth-child(1) .values_icon{
+    background: #3586ff;
+}
+
+.values_container .values_box:nth-child(1){
+    background: #6a85ff;
+}
+
+.values_container .values_box:nth-child(2) .values_icon{
+    background: #4564ed;
+}
+
+.values_container .values_box:nth-child(2){
+    background: #5f7dff;
+}
+
+.values_container .values_box:nth-child(3) .values_icon{
+    background: #23798e;
+}
+
+.values_container .values_box:nth-child(3){
+    background: #328fa5;
+}

@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.header_container{
+    width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.main_head{
+    width: 100%;
+    height: 54px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 9999;
+}
+
+.main_head.slidedown{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    animation: slidedown .4s forwards;
+}
+
+@keyframes slidedown{
+    from{
+        top: -250px;
+    }
+    to{
+        top: 0;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .2);
+        
+    }
+}
+
+
+.main_head .main_menu{
+    width: 100%;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_head .main_menu .logo{
+    font-size: 29px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    
+}
+
+.main_head .main_menu .nav_menu .nav_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_head .main_menu .nav_menu .nav_list .nav_list_item{
+    list-style: none;
+    padding: 15px 30px;
+
+}
+
+.main_head .main_menu .nav_menu .nav_list .nav_list_item .nav_link{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    transition: all .1s ease-in-out;
+}
+
+.main_head.slidedown .main_menu .nav_menu .nav_list .nav_list_item .nav_link{
+    color: black;
+}
+
+
+.main_head .main_menu .nav_menu .nav_list .nav_list_item .nav_link:hover{
+    color: #3586ff;
+}
+
+.showcase{
+    width: 100%;
+    height: 600px;
+    background-image: url('img/showcase2.jpg');
+    background-position: center 20%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.showcase .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.showcase .content{
+    padding: 0 230px 0 230px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.showcase .content h2{
+    font-size: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    line-height: 55px;
+    color: #fff;
+   
+}
+
+.content{
+    margin-top: 80px;
+}
+
+.showcase .content p{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.showcase .content .btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid #3586ff;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+}
+
+.showcase .content .btn:hover{
+    background-color: #3586ff;
+}
+
+.icon {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    transition: all .1s ease-in-out;
+}
+
+.main_head.slidedown .main_menu .logo a span {
+    transition: all .2s ease-in-out;
+}
+
+.logo a:hover{
+    color: #3586ff;
+}
+
+
+.main_head.slidedown .main_menu .logo a span {
+    color: black !important;
+}
+
+.main_head.slidedown .main_menu .logo:hover a span {
+    color: #3586ff !important;
+}
+
+@media (max-width: 900px){
+   
+
+    .header_container{
+        width: 100%;
+
+        background-color: #b5cff5;
+    }
+
+    .main_head .main_menu .logo{
+        color: #fff !important;
+    }
+
+    .showcase{
+        display: none;
+    }
+
+    .icon {
+        display: block;
+        margin-right: 40px;
+        font-size: 40px;
+        color: #fff;
+    }
+
+
+
+
+    
+    
+    
+}
+
+
+@media screen and (max-width: 900px) {
+
+    #menu_icon{
+        display: block;
+    }
+
+    .nav_list{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+   
+    .nav_menu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 29vh;
+
+        background-color: #a5c5f6;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+
+        margin-top: 5px;
+    }
+
+    .nav_menu a{
+        display: block;
+    
+        transition: all .50s ease;
+    }
+
+    .nav_menu.open{
+        right: 2%;
+    }
+  }

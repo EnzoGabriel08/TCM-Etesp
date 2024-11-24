@@ -1,0 +1,137 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+header.main_head {
+    background-color: #0a5d5f; /* Cor adaptada para assessoria trabalhista */
+    padding: 10px 0;
+    color: #ffffff;
+}
+
+header .logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav_menu ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav_menu .nav_link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+.main_head .header_container .main_menu .logo a span {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+.main_head .header_container .main_menu .logo a span:hover {
+    color: #d1e7e7 !important;
+   
+}
+
+
+.nav_menu .nav_link:hover {
+    color: #d1e7e7 !important;
+}
+
+
+
+/* Estilos da Página */
+.intro, .section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2, .section h2 {
+    color: #0a5d5f;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.intro .summary, .section .summary {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Botão Saiba Mais */
+.btn-see-more {
+    background-color: #0a5d5f;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-see-more:hover {
+    background-color: #084f4f;
+}
+
+/* Conteúdo Extra */
+.extra-content {
+    display: none;
+    color: #555;
+    margin-top: 10px;
+}
+
+.extra-content p {
+    font-size: 16px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0a5d5f;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav_menu ul {
+        flex-direction: column;
+    }
+
+    .btn-see-more {
+        width: 100%;
+    }
+
+    .header_container{
+        background-color: #0a5d5f;
+    }
+
+    .nav_menu{
+        background-color: #0a5d5f;
+
+        height: 43vh;
+    }
+}

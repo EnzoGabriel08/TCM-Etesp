@@ -1,0 +1,331 @@
+.body_card{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    min-height: 120vh;
+    position: relative;
+}
+
+.body_card::before{
+    position: absolute;
+    content: " ";
+    background: linear-gradient(#bdc8ff, #CED6FB);
+    left: 0;
+    inset: 0;
+    transform: skewY(5deg);
+}
+
+.servs {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute; /* ou fixed, se quiser que ela fique fixa na tela ao rolar */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* ou ajuste conforme necessário */
+    height: auto; /* Ajuste conforme necessário */
+    z-index: 1; /* Certifica-se de que está acima de outros elementos */
+    padding-top: 40px;
+}
+
+.teste_caixa{
+    z-index: 1;
+    position: relative; /* Certifica que ela seja renderizada acima */
+    height: 100px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.teste_caixa h1{
+    font-size: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.caixa_preta {
+    position: absolute; /* Faz a caixa preta seguir a posição da teste_caixa */
+    top: 90%; /* Move a caixa preta exatamente abaixo de teste_caixa */
+    left: 0; /* Alinha com a borda esquerda de teste_caixa */
+    height: 0.7px;
+    width: 107px;
+    background-color: #000;
+    transform: translateX(-50%); /* centraliza a .caixa_preta horizontalmente, corrigindo o deslocamento causado pelo left: 50%, já que ele alinha o canto esquerdo da caixa_preta ao centro da teste_caixa.*/ 
+    left: 50%; /*move o ponto de ancoragem da .caixa_preta para o centro horizontal da .teste_caixa.*/
+    margin-bottom: 15px;
+}
+
+.texto_serv{
+    position: absolute; /* Faz a caixa preta seguir a posição da teste_caixa */
+    top: 100%; /* Move a caixa preta exatamente abaixo de teste_caixa */
+    left: 0; /* Alinha com a borda esquerda de teste_caixa */
+    transform: translateX(-50%); /* centraliza a .caixa_preta horizontalmente, corrigindo o deslocamento causado pelo left: 50%, já que ele alinha o canto esquerdo da caixa_preta ao centro da teste_caixa.*/ 
+    left: 50%; /*move o ponto de ancoragem da .caixa_preta para o centro horizontal da .teste_caixa.*/
+    padding-top: 10px;
+}
+
+.body_card_mobile{
+   display: none;
+}
+
+
+
+.card_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card_item {
+    margin: -10px;
+    margin-bottom: 60px;
+    transform: scale(0.8);
+    display: block;
+}
+
+
+.mobile_card{
+    display: none;
+    margin: -10px;
+    margin-bottom: 60px;
+    transform: scale(0.8);
+}
+
+.card_link {
+    display: block;
+    width: 400px;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card_link:hover {
+    transform: scale(1.05); /* Zoom suave ao passar o mouse */
+    border-color: #5372F0;
+}
+
+.card_image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.card_button {
+    margin-top: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 24px;
+    color: #000;
+}
+
+.card_list .card_link .badge{
+    color: #5372F0;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #DDE4FF;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card_list .card_link .card_title{
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.card_list .card_link .card_button{
+    height: 35px;
+    width: 35px;
+    color: #5372F0;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5372F0;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card_list .card_link:hover .card_button{
+    color: #fff;
+    background: #5372F0;
+}
+
+.card_list .card_link .badge.teste1{
+    color: rgb(24, 126, 194);
+}
+
+.card_list .card_link .badge.teste2{
+    color: green;
+}
+
+.card_list .card_link .badge.teste3{
+    color: rgb(50, 17, 128);
+}
+
+.card_list .card_link .badge.teste4{
+    color: rgb(255, 0, 170);
+}
+
+.caixona_mobile{
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+
+
+
+    .menu{
+        display: none; /*Ocultando o menu*/
+    }
+
+
+
+
+    .body_card_mobile {
+        display: flex;
+        flex-direction: column; /* Organiza os itens em coluna */
+        align-items: center; /* Centraliza horizontalmente */
+        justify-content: center; /* Centraliza verticalmente */
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        
+    }
+    
+    
+    
+    .body_card_mobile::before{
+        position: absolute;
+        content: " ";
+        background: linear-gradient(#bdc8ff, #CED6FB);
+        left: 0;
+        inset: 0;
+        transform: skewY(5deg);
+    }
+
+    .card_list_mobile {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .card_link_mobile {
+        display: block;
+        width: 90%; /* Largura responsiva */
+        max-width: 340px; /* Largura máxima do cartão */
+        background: #fff;
+        padding: 18px;
+        border-radius: 12px;
+        text-decoration: none;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        margin: 0 auto; /* Centraliza horizontalmente o cartão */
+    }
+    
+
+
+
+    .card_image_mobile {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        
+    }
+
+    .card_button {
+        margin-top: 10px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 24px;
+        color: #000;
+    }
+    
+    .card_list_mobile .card_link_mobile .badge{
+        color: #5372F0;
+        padding: 8px 16px;
+        font-size: 0.95rem;
+        font-weight: 500;
+        margin: 16px 0 18px;
+        background: #DDE4FF;
+        width: fit-content;
+        border-radius: 50px;
+    }
+    
+    .card_list_mobile .card_link_mobile .card_title_mobile{
+        font-size: 1.19rem;
+        color: #000;
+        font-weight: 600;
+    }
+    
+    .card_list_mobile .card_link_mobile .card_button{
+        height: 35px;
+        width: 35px;
+        color: #5372F0;
+        border-radius: 50%;
+        margin: 30px 0 5px;
+        background: none;
+        border: 2px solid #5372F0;
+        transform: rotate(-45deg);
+    }
+
+    .card_list_mobile .card_link:hover .card_button{
+        color: #fff;
+        background: #5372F0;
+    }
+    
+    .card_list_mobile .card_list_mobile .badge.teste1{
+        color: rgb(24, 126, 194);
+    }
+    
+    .card_list_mobile .card_list_mobile .badge.teste2{
+        color: green;
+    }
+    
+    .card_list_mobile .card_list_mobile .badge.teste3{
+        color: rgb(50, 17, 128);
+    }
+    
+    .card_list_mobile .card_list_mobile .badge.teste4{
+        color: rgb(255, 0, 170);
+    }
+
+    .card_item {
+        display: none;
+    }
+
+
+    .mobile_card {
+        display: flex;
+        flex-direction: column; /* Permite que o conteúdo se empilhe verticalmente */
+        justify-content: center; /* Centraliza o conteúdo do cartão */
+        align-items: center; /* Centraliza horizontalmente */
+        flex: 0 0 auto; /* Mantém o tamanho do cartão */
+        width: 105vw;
+        margin-top: 30px;
+    }
+    
+
+    .texto_serv{
+        width: 200px;
+    }
+
+    
+}

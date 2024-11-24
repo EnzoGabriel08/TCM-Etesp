@@ -1,0 +1,313 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body{
+    background: linear-gradient(#F4F7FF, #E2E7FE);
+    overflow-x: hidden;
+    min-height: 100vh;
+    justify-content: flex-end;
+    align-items: flex-end;    
+}
+
+
+
+.teste_transp{
+    color: transparent;
+}
+
+.mobile_menu{
+    cursor: pointer;
+    display: none;
+}
+
+.mobile_menu div{
+    height: 3.8px;
+    width: 40px;
+    background: #fff;
+    margin: 8px;
+}
+
+
+section{
+    padding: 90px 4%;
+    /*border-bottom: 1px solid #ccc;*/
+}
+
+section h2{
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+section p{
+    font-size: 20px;
+}
+
+.most_accessed {
+    margin-top: 160px;
+    background-color: rgb(108, 108, 108);
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Alinha verticalmente */
+    justify-content: flex-start;
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+.most_accessed h3{
+    font-size: 38px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif, Times, serif;
+    color: #fff;
+    font-weight: 400;
+}
+
+.caixa_1, .caixa_2, .caixa_3, .caixa_4{
+    
+    height: 250px;
+    width: 600px;
+    margin: 10px;
+    
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column; /* Organiza as caixas verticalmente */
+}
+
+.caixa_3, .caixa_4{
+    margin-left: 50px;
+}
+
+
+.caixagrande {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Ajuste conforme necessário */
+    text-align: left;
+}
+
+.caixagrande h1 {
+    
+    font-size: 22px;
+    font-weight: bold;
+    color: #eeeeee; /* Cor mais escura para contraste */
+    margin-bottom: 10px;
+    padding: 10px;
+    
+    border-radius: 8px;
+    
+}
+
+.caixagrande p {
+    font-size: 17px;
+    line-height: 1.6; /* Melhor leitura */
+    color: #ffffff; /* Cor de texto suave */
+    margin-top: 12px;
+    padding: 8px 10px;
+   
+   
+    border-radius: 5px;
+  
+}
+
+.caixagrande h1, .caixagrande p {
+    text-align: left;
+}
+
+.button_accessed{
+    
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid #3586ff;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+}
+
+.button_accessed:hover{
+    background-color: #3586ff;
+}
+
+
+
+
+
+
+
+.values_box a{
+    color: #fff;
+}
+
+
+
+
+
+
+
+.teste_mobile{
+    display: none;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .values_box{
+        display: none;
+    }
+
+    .caixagrande{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .most_accessed{
+        height: 1300px;
+    }
+
+    .caixa_1, .caixa_2, .caixa_3, .caixa_4{
+        width: 360px;
+    }
+
+    .caixa_1, .caixa_2{
+        padding-left: 44px;
+    }
+
+
+
+    .teste_mobile{
+        background-color: #b2d1ff;   /*#88b8ff*/
+        height: 910px;
+        width: 100%;
+        display: block;
+        margin-bottom: 70px;
+        margin-top: 100px;
+    }
+
+    .texto_values_mobile {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 18.5px;
+
+        background-color: #a2c6fc;
+    }
+
+    
+
+    .caixona{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        
+    }
+
+    .objetos:nth-child(1){
+        margin-top: 20px;
+    }
+
+    .objetos{
+        display: flex;
+        height: 200px;
+        width: 300px;
+        
+        margin-bottom: 30px;
+        flex-direction: column;
+
+        border-radius: 10%;
+    }
+
+  
+
+    .objetos h1{
+        text-align: center;
+
+        font-size: 26px;
+
+        font-family: "Montserrat", sans-serif;
+
+        padding-top: 10px;
+    }
+
+    .objetos p{
+        text-align: center;
+        margin-top: 7px;
+
+        font-size: 18px;
+        line-height: 1.6; /* Melhor leitura */
+        color: #000000; /* Cor de texto suave */
+       
+        padding: 8px 10px;
+       
+       
+        border-radius: 5px;
+    }
+
+
+    .teste_costas{
+        display: none;
+    }
+
+    .button_teste_fica{
+        height: 110px;
+        width: 390px;
+
+        text-align: center;
+        padding-top: 28px;
+
+       
+
+        background-color: #a2c6fc;
+    }
+
+
+    .button_accessed_mobile{
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 15px;
+        border: 2px solid #003f9c;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 15px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        background-color: #2773e5;
+       
+    }
+
+
+    
+    .card_wrapper_mobile {
+        overflow-x: auto;
+        max-width: 100%; /* Para que a largura não exceda a largura da tela */
+        padding: 10px; /* Adiciona um pouco de espaço interno */
+        box-sizing: border-box; /* Para incluir o padding na largura total */
+    }
+    
+    .card_list_mobile {
+        width: 1550px;
+    }
+
+    
+
+    /*PAREI AQUI
+    A IDEIA É COLOCAR IMAGENS ACIMA DOS TÍTULOS "DEMANDA, PESSOAS e LOCALIDADE". E FAZEE COM QUE APARECAM AO DESCER A TELA
+    UMA ESPÉCIE DE SCROOL*/
+}

@@ -1,0 +1,87 @@
+/*section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important; 
+    overflow: hidden;  /*Tirar a barra de rolagem, mesmo que o conteúdo vaze da tela
+}
+
+.slider_content{
+    display: flex;
+    width: 400%;
+    height: auto;
+}
+
+.slider_content input, .img_mobile{
+    display: none;
+}
+
+.slide_box{
+    width: 25%;
+    text-align: center;
+    position: relative;
+    height: auto;
+    transition: 1s;
+}
+
+.slide_box img{
+    width: 100%;
+}
+
+.nav_manual, .nav_auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_manual .manual_btn, .nav_auto div{
+    border: 1px solid #5372F0;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav_manual .manual_btn:not(:last-child), .nav_auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav_manual .manual_btn:hover{
+    background-color: #5372F0;
+}
+
+#radio1:checked ~ .nav_auto .auto_btn1, #radio2:checked ~ .nav_auto .auto_btn2, #radio3:checked ~ .nav_auto .auto_btn3{
+    background-color: #5372F0;
+}
+
+
+
+/*Não entendi a parte do margin-left
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+@media screen and (max-width: 900px) {
+    .img_desktop{
+        display: none;
+    }
+
+    .img_mobile{
+        display: block;
+    }
+
+    .nav_auto, .nav_manual{
+        margin-top: 60%;
+    }
+}*/
